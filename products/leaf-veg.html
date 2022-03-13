@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables | TheVegBox</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../icon/android-chrome-192x192.png" sizes="16x16">
+
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+
+        <a href="../index.html" class="logo"> <i class="fas fa-shopping-basket"></i> TheVegBox </a>
+        <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a href="../products/allvegetables.html">Vegetables <i class="fas fa-caret-down arrow veg-arrow"></i> </a>
+
+                <div class="dropdown__menu">
+                    <ul>
+                        <li><a href="../products/reg-veg.html">Regular Vegetables</a></li>
+                        <li><a href="../products/leaf-veg.html">Leafy Vegetables</a></li>
+                        <li><a href="../products/exo-veg.html">Exotic Vegetables</a></li>
+                        <li><a href="../products/gourd-veg.html">Grouds and Pumpkin</a></li>
+                        <li><a href="../products/salad-veg.html">Salad</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="../products/allfruits.html">Fruits <i class="fas fa-caret-down fruit-arrow"></i> </a>
+                <div class="dropdown__menu">
+                    <ul>
+                        <li><a href="../products/orgfruit.html">Organic Fruits</a></li>
+                        <li><a href="../products/impfruit.html">Premium Imported Fruits</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="../cart.html">
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            </a>
+            <a href="../account.html">
+                <div class="fas fa-user" id="login-btn"></div>
+            </a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="../image/cart-img-1.png" alt="">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">25 &#8377;/ kg/-</span>
+                    <span class="quantity">qty : 1 KG</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="../image/cart-img-2.png" alt="">
+                <div class="content">
+                    <h3>onion</h3>
+                    <span class="price">50 &#8377;/ kg/-</span>
+                    <span class="quantity">qty : 2 KG</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="../image/product-4.png" alt="">
+                <div class="content">
+                    <h3>cabbage</h3>
+                    <span class="price">50 &#8377;/ kg/-</span>
+                    <span class="quantity">qty : 2 KG</span>
+                </div>
+            </div>
+
+            <div class="total"> total : 125 &#8377;/ kg/- </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+
+    </header>
+
+
+    <div class="veg-heading">
+        <h1> Leafy Vegetables</h1>
+        <p><a href="index.html">Home >></a>Leafy Vegetables </p>
+    </div>
+
+
+
+
+    <!-- ---Product Section starts--- -->
+
+    <section class="all-products">
+
+        <h1 class="title"><span></span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="../image/Dill-leaves.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Organic dill leaves</h3>
+                    <div class="price">17 &#8377;/ bunch</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="../image/Organic-Coriander.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Organic coriander</h3>
+                    <div class="price">10 &#8377;/ bunch</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="../image/spinach.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Organic spinach green</h3>
+                    <div class="price">14 &#8377;/ bunch</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="../image/spring-onion.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Organic spring onion</h3>
+                    <div class="price">37 &#8377;/ kg</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="../image/mint.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Organic mint</h3>
+                    <div class="price">6 &#8377;/ bunch</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="../image/Fenugreek-methi.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Organic Fenugreek / methi</h3>
+                    <div class="price">15 &#8377;/ bunch</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="../image/baby-spinach.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Organic baby-spinach</h3>
+                    <div class="price">20 &#8377;/ bunch</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="../image/lemongrass.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Organic lemongrass</h3>
+                    <div class="price">35 &#8377;/ 500g</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="../image/Red_Math_large.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Organic Red Amaranth (Lal Math)</h3>
+                    <div class="price">10 &#8377;/ bunch</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="../image/Organic_Green_Sorrel_Ambat_Chuka.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Organic Green Sorrel / Ambat Chuka</h3>
+                    <div class="price">11 &#8377;/ bunch</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ---Product Section End--- -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> TheVegBox <i class="fas fa-shopping-basket"></i> </h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +91 9856789015 </a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +91 9454212541 </a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> thevegbox@gmail.com </a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Gujarat, india - 380024 </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+                <img src="../image/payment.png" class="payment-img" alt="">
+            </div>
+
+        </div>
+
+        <div class="credit"> &copy; copyright <span> TheVegBox </span> | all rights reserved </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

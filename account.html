@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | TheVegBox</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- unicons link for icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="icon/android-chrome-192x192.png" sizes="16x16">
+
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+
+        <a href="index.html" class="logo"> <i class="fas fa-shopping-basket"></i> TheVegBox </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="products/allvegetables.html">Vegetables</a>
+            <a href="products/allfruits.html">Fruits</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="cart.html">
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            </a> 
+            <a href="account.html">
+                <div class="fas fa-user" id="login-btn"></div>
+            </a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- ---header-section starts---- -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="forms">
+                <div class="form login">
+                    <span class="title-LR">Login</span>
+    
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your email" required>
+                            <i class="uil uil-envelope icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Enter your password" required>
+                            <i class="uil uil-lock icon"></i>
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                        </div>
+    
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="logCheck">
+                                <label for="logCheck" class="cb-text">Remember me</label>
+                            </div>
+                            
+                            <a href="#" class="link-text">Forgot password?</a>
+                        </div>
+    
+                        <div class="input-field button">
+                            <input type="submit" value="Login Now">
+                        </div>
+                    </form>
+    
+                    <div class="login-signup">
+                        <span class="cb-text">Not a member?
+                            <a href="#" class="link-text signup-link">Signup now</a>
+                        </span>
+                    </div>
+                </div>
+
+
+                <!-- Registration Form -->
+                <div class="form signup">
+                    <span class="title-LR">Registration</span>
+
+                    <form action="#">
+                        <div class="user-detail">
+                            <div class="input-field">
+                                <input type="text" placeholder="First name" required>
+                                <i class="uil uil-user"></i>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" placeholder="last name" required>
+                                <i class="uil uil-user"></i>
+                            </div>
+                            <div class="input-field">
+                                <input type="email" placeholder="Email Address" required>
+                                <i class="uil uil-envelope icon"></i>
+                            </div>
+                            <div class="input-field">
+                                <input type="tel" placeholder="Phone number" pattern="[789][0-9]{9}" required>
+                                <i class="uil uil-phone"></i>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" placeholder="Enter address" required>
+                                <i class="uil uil-location-point"></i>
+                            </div>
+                            <div class="input-field">
+                                <input type="number" placeholder="Enter pincode"  required >
+                                <i class="uil uil-map-pin-alt"></i>
+                            </div>
+                            <div class="input-field">
+                                <input id="createPw" type="password" class="password" placeholder="Create a password" required>
+                                <i class="uil uil-lock icon"></i>
+                            </div>
+                            <div class="input-field">
+                                <input id="confirmPw" type="password" class="password" placeholder="Confirm a password" required disabled>
+                                <i class="uil uil-lock icon"></i>
+                                <i class="uil uil-eye-slash showHidePw"></i>
+                            </div>
+                            <div class="alert">
+                                <i class="fas fa-exclamation-circle errorIcon"></i>
+                                <span class="txt">Enter atleast 8 characters</span>
+                            </div>
+                        </div>
+
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="sigCheck">
+                                <label for="sigCheck" class="cb-text">Remember me</label>
+                            </div>
+                            
+                            <a href="#" class="link-text">Forgot password?</a>
+                        </div>
+
+                        <div class="input-field button">
+                            <input id="button" type="submit" value="Register Now">
+                        </div>
+                    </form>
+
+                    <div class="login-signup">
+                        <span class="cb-text">Already a member?
+                            <a href="#" class="link-text login-link">Login now</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---header-section ends---- -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> TheVegBox <i class="fas fa-shopping-basket"></i> </h3>
+                <p>TheVegBox is the best place to buy organic and fresh vegetables and fruits directly from farmers</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +91 9856789015 </a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +91 9454212541 </a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> thevegbox@gmail.com </a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Gujarat, india - 380024 </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+                <img src="image/payment.png" class="payment-img" alt="">
+            </div>
+
+        </div>
+
+        <div class="credit"> &copy; copyright <span> TheVegBox </span> | all rights reserved </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
