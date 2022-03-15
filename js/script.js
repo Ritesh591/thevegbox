@@ -62,7 +62,7 @@ var swiper = new Swiper(".review-slider", {
 
 // Login page
 
-const container = document.querySelector(".container"),
+  const container = document.querySelector(".container"),
       pwShowHide = document.querySelectorAll(".showHidePw"),
       pwFields = document.querySelectorAll(".password"),
       signUp = document.querySelector(".signup-link"),
@@ -103,40 +103,39 @@ const container = document.querySelector(".container"),
         container.classList.remove("active");
     });
 
-// to check and confirm input field's password
+    // to check and confirm input field's password
 
-createPw.addEventListener("input", ()=>{
-  let inputValue = createPw.value.trim(); //trim function do not count more than one space
+    createPw.addEventListener("input", ()=>{
+      let inputValue = createPw.value.trim(); //trim function do not count more than one space
 
-  if(inputValue.length >=8 ){
-    confirmPw.removeAttribute("disabled");
-    submitBtn.removeAttribute("disabled");
-    submitBtn.classList.add("active");
-  }else{
-    confirmPw.setAttribute("disabled", true);
-    submitBtn.setAttribute("disabled", true);
-    submitBtn.classList.remove("active");
-    confirmPw.value = "";
-    alertText.style.color = "#a6a6a6";
-    alertText.innerText = "Enter at least 8 characters";
-    alertIcon.style.display = "none";
-  }
-});
+      if(inputValue.length >=8 ){
+        confirmPw.removeAttribute("disabled");
+        submitBtn.removeAttribute("disabled");
+        submitBtn.classList.add("active");
+      }else{
+        confirmPw.setAttribute("disabled", true);
+        submitBtn.setAttribute("disabled", true);
+        submitBtn.classList.remove("active");
+        confirmPw.value = "";
+        alertText.style.color = "#a6a6a6";
+        alertText.innerText = "Enter at least 8 characters";
+        alertIcon.style.display = "none";
+      }
+    });
 
-submitBtn.addEventListener("click", ()=>{
-  if(createPw.value === confirmPw.value){
-    alertText.innerText = "Password matched";
-    alertIcon.style.display = "none";
-    alertText.style.color = "#4070F4";
-  }else {
-    alertText.innerText = "Password didn't matched";
-    alertIcon.style.display = "block";
-    alertText.style.color = "#D93025";
-  }
- });
-
-
+    submitBtn.addEventListener("click", ()=>{
+      if(createPw.value === confirmPw.value){
+        alertText.innerText = "Password matched";
+        alertIcon.style.display = "none";
+        alertText.style.color = "#4070F4";
+      }else {
+        alertText.innerText = "Password didn't matched";
+        alertIcon.style.display = "block";
+        alertText.style.color = "#D93025";
+      }
+    });
   });
+
 
 // contact form
 
