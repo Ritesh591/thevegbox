@@ -157,7 +157,6 @@ const decreaseNumber = (incdec,itemPrice) => {
     itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 100 ;
     productSubtotalAmt.innerHTML = parseInt(productSubtotalAmt.innerHTML) - 100 ;
     totalCartAmt.innerHTML = parseInt(productSubtotalAmt.innerHTML) + parseInt(deliveryCharge.innerHTML) ;
-
   }
 }
 const increaseNumber = (incdec,itemPrice) => {
