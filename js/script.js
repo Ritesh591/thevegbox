@@ -136,52 +136,44 @@ var swiper = new Swiper(".review-slider", {
     });
   });
 
-
-// contact form
-
-const inputs = document.querySelectorAll(".input");
-
-function focusFunc(){
-  let parent = this.parentNode;
-  parent.classList.add("focus");
-}
-
-function blurFunc(){
-  let parent = this.parentNode;
-  if(this.value == ""){
-  parent.classList.remove("focus");
-  }  
-}
-
-inputs.forEach((input) => {
-  input.addEventListener("focus",focusFunc);
-  input.addEventListener("blur",blurFunc);
-});
-
-
 // CART
 
 
 // --quantity button----
-const decreaseNumber = (incdec) => {
+var productSubtotalAmt = document.getElementById('productSubtotalAmt');
+var deliveryCharge = document.getElementById('deliveryCharge');
+var totalCartAmt = document.getElementById('totalCartAmt');
+
+
+const decreaseNumber = (incdec,itemPrice) => {
   var itemVal = document.getElementById(incdec);
+  var itemPrice = document.getElementById(itemPrice);
 
 
-  if(itemVal.value < 1){
+  if(itemVal.value <= 0){
     itemVal.value = 0;
   }else{
     itemVal.value = parseInt(itemVal.value) - 1;
+    itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 100 ;
+    productSubtotalAmt.innerHTML = parseInt(productSubtotalAmt.innerHTML) - 100 ;
+    totalCartAmt.innerHTML = parseInt(productSubtotalAmt.innerHTML) + parseInt(deliveryCharge.innerHTML) ;
+
   }
 }
-const increaseNumber = (incdec) => {
+const increaseNumber = (incdec,itemPrice) => {
   var itemVal = document.getElementById(incdec);
+  var itemPrice = document.getElementById(itemPrice);
 
 
-  if(itemVal.value > 5){
-    itemVal.value = 5;
-    alert('max 5 allowed');
+  if(itemVal.value >= 10){
+    itemVal.value = 10;
+    alert('Max 10 allowed');
   }else{
     itemVal.value = parseInt(itemVal.value) + 1;
+    itemPrice.innerHTML = parseInt(itemPrice.innerHTML) + 100;
+    productSubtotalAmt.innerHTML = parseInt(productSubtotalAmt.innerHTML) + 100 ;
+    totalCartAmt.innerHTML = parseInt(productSubtotalAmt.innerHTML) + parseInt(deliveryCharge.innerHTML) ;
+
   }
 }
 

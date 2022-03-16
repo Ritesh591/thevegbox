@@ -86,17 +86,17 @@
                 <td>
                     <ul class="pagination justify-content-left set_quantity">
                         <li class="page-item">
-                            <button class="page-link" onclick="decreaseNumber('textbox')"><i
+                            <button class="page-link" onclick="decreaseNumber('textbox','itemVal')"><i
                                     class="fas fa-minus"></i></button>
                         </li>
                         <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox"></li>
                         <li class="page-item">
-                            <button class="page-link" onclick="increaseNumber('textbox')"><i
+                            <button class="page-link" onclick="increaseNumber('textbox','itemVal')"><i
                                     class="fas fa-plus"></i></button>
                         </li>
                     </ul>
                 </td>
-                <td>100 &#8377;/-</td>
+                <td><span id="itemVal">0</span> &#8377;/-</td>
             </tr>
             <tr>
                 <td>
@@ -113,17 +113,17 @@
                 <td>
                     <ul class="pagination justify-content-left set_quantity">
                         <li class="page-item">
-                            <button class="page-link" onclick="decreaseNumber('textbox1')"><i
+                            <button class="page-link" onclick="decreaseNumber('textbox1','itemVal1')"><i
                                     class="fas fa-minus"></i></button>
                         </li>
                         <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox1"></li>
                         <li class="page-item">
-                            <button class="page-link" onclick="increaseNumber('textbox1')"><i
+                            <button class="page-link" onclick="increaseNumber('textbox1','itemVal1')"><i
                                     class="fas fa-plus"></i></button>
                         </li>
                     </ul>
                 </td>
-                <td>50 &#8377;/-</td>
+                <td><span id="itemVal1">0</span> &#8377;/-</td>
             </tr>
             <tr>
                 <td>
@@ -131,7 +131,7 @@
                         <img src="image/potato.png" alt="cart-apple">
                         <div>
                             <p>Organic Potato</p>
-                            <small>price : 20 &#8377;/- Per kg</small>
+                            <small>price : <span>20</span> &#8377;/- Per kg</small>
                             <br>
                             <a href="#" >Remove</a>
                         </div>
@@ -140,17 +140,17 @@
                 <td>
                     <ul class="pagination justify-content-left set_quantity">
                         <li class="page-item">
-                            <button class="page-link" onclick="decreaseNumber('textbox2')"><i
+                            <button class="page-link" onclick="decreaseNumber('textbox2','itemVal2')"><i
                                     class="fas fa-minus"></i></button>
                         </li>
-                        <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox2"></li>
+                        <li class="page-item"><input type="text" name="" class="page-link" value="0 " id="textbox2"></li>
                         <li class="page-item">
-                            <button class="page-link" onclick="increaseNumber('textbox2')"><i
+                            <button class="page-link" onclick="increaseNumber('textbox2','itemVal2')"><i
                                     class="fas fa-plus"></i></button>
                         </li>
                     </ul>
                 </td>
-                <td>20 &#8377;/-</td>
+                <td><span id="itemVal2">0</span> &#8377;/-</td>
             </tr>
         </table>
 
@@ -159,19 +159,19 @@
             <table>
                 <tr>
                     <td>Subtotal</td>
-                    <td>170 &#8377;/-</td>
+                    <td><span id="productSubtotalAmt">0</span> &#8377;/-</td>
                 </tr>
                 <tr>
                     <td>Delivery Charge</td>
-                    <td>0 &#8377;/-</td>
+                    <td><span id="deliveryCharge">10</span> &#8377;/-</td>
                 </tr>
                 <tr>
                     <td>Total</td>
-                    <td>170 &#8377;/-</td>
+                    <td><span id="totalCartAmt">0</span> &#8377;/-</td>
                 </tr>
             </table>    
         </div>
-        <a href="/checkout.html"><button class="btn checkout-btn">Proceed to Buy  <i class="fa fa-duotone fa-arrow-right"></i></button></a>
+        <a href="checkout.html"><button class="btn checkout-btn">Proceed to Buy  <i class="fa fa-duotone fa-arrow-right"></i></button></a>
     </div>
 
 

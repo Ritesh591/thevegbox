@@ -105,24 +105,16 @@
                 <form  action="index.html">
                     <h3 class="title-contact">Contact Us</h3>
                     <div class="input-container ">
-                        <input type="text" name="name" class="input">
-                        <label for="">Username</label>
-                        <span>Username</span>
+                        <input type="text" name="name" class="input" placeholder="Username" required>
                     </div>
                     <div class="input-container ">
-                        <input type="email" name="email" class="input">
-                        <label for="">Email</label>
-                        <span>Email</span>
+                        <input type="email" name="email" class="input" placeholder="Email Address" required>
                     </div>
                     <div class="input-container ">
-                        <input type="tel" name="phone" class="input">
-                        <label for="">Phone</label>
-                        <span>Phone</span>
+                        <input type="tel" name="phone" class="input" placeholder="Mobile Number" pattern="[789][0-9]{9}" required>
                     </div>
-                    <div class="input-container textarea ">
-                        <textarea name="message" class="input"></textarea>
-                        <label for="">Message</label>
-                        <span>Username</span>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input" placeholder="message" required></textarea>
                     </div>
                     <input type="submit" value="Send" class="contact-btn" />
                     
