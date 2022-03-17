@@ -54,7 +54,7 @@
     </header>
 
     <div class="check-page">
-      <div class="check-container">
+      <div id="check" class="check-container">
         <div class="title">Checkout</div>
         <div class="content">
           <form action="#">
@@ -89,40 +89,32 @@
               </div>
             </div>
             <div class="pay-option">
-              <input type="radio" name="pay" id="dot-1">
-              <input type="radio" name="pay" id="dot-2">
-              <input type="radio" name="pay" id="dot-3">
+              <input type="radio" name="pay" id="dot-1" checked>
               <span class="pay-title">Payment Options</span>
               <div class="category">
                 <label for="dot-1">
                 <span class="dot one"></span>
                 <span class="payment">Cash On Delivery</span>
-              </label>
-              <label for="dot-2">
-                <span class="dot two"></span>
-                <span class="payment">UPI</span>
-              </label>
-              <label for="dot-3">
-                <span class="dot three"></span>
-                <span class="payment">Debit Card / Credit Card</span>
                 </label>
               </div>
             </div>
             <div class="pay-button">
-              <input type="submit" value="Place Order">
+              <input id="pay-btn" type="submit" value="Place Order" onclick="switchVisible();">
             </div>
           </form>
         </div>
       </div>
-      <!-- <div class="wrapper">
+      <div id="wrapper" class="wrapper">
         <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
           <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
           <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
         </svg>
-        <h1>Order Placed</h1>
-        <p>Thank You</p>
-        <a href="#">Shop more</a>
-      </div> -->
+        <div class="wrapper-content">
+          <h1>Order Placed !</h1>
+          <a href="index.html"><input type="submit" value="Shop more"></a>
+        </div>
+        
+      </div>
         
       </div>
     </div>
@@ -131,7 +123,7 @@
 
     <!-- footer section starts  -->
 
-    <section class="footer">
+    <!-- <section class="footer">
 
         <div class="box-container">
 
@@ -175,7 +167,7 @@
 
         <div class="credit"> &copy; copyright <span> TheVegBox </span> | all rights reserved </div>
 
-    </section>
+    </section> -->
 
     <!-- footer section ends -->
 

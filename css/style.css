@@ -1505,7 +1505,6 @@ th:last-child {
   background: white;
   padding: 2.5rem 3rem;
   border-radius: .5rem;
-  /* display: none; */
 }
 
 .check-container .title{
@@ -1617,14 +1616,37 @@ form input[type="radio"]{
   background: linear-gradient(-90deg, rgb(255, 208, 69) 0%, rgb(255, 171, 82) 100%);
 }
 
-
-/* 
+ 
 .wrapper {
-  height: 60vh;
-  display: flex;
+  display: none;
+  position: relative;
+  height: 58vh;
+  width: 50vh;
   justify-content: center;
   align-items: center;
   background-color: #eee
+}
+
+.wrapper .wrapper-content{
+  position: absolute;
+  bottom: 5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper-content h1{
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.wrapper-content input{
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 5rem;
+  background-color: var(--orange);
+  color: white;
+  cursor: pointer;
+  padding: .5rem 2rem;
 }
 
 .checkmark__circle {
@@ -1638,11 +1660,11 @@ form input[type="radio"]{
 }
 
 .checkmark {
-  width: 56px;
-  height: 56px;
+  width: 61px;
+  height: 61px;
   border-radius: 50%;
   display: block;
-  stroke-width: 2;
+  stroke-width: 5;
   stroke: #fff;
   stroke-miterlimit: 10;
   margin: 10% auto;
@@ -1679,8 +1701,7 @@ form input[type="radio"]{
   100% {
       box-shadow: inset 0px 0px 0px 30px #7ac142
   }
-} */
-
+} 
 
 
 

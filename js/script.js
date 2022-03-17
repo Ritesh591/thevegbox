@@ -201,3 +201,17 @@ function removeCartItem(event) {
   buttonClicked.parentElement.remove()
 }
 
+
+function switchVisible() {
+  if (document.getElementById('check')) {
+
+      if (document.getElementById('check').style.display == 'none') {
+          document.getElementById('check').style.display = 'none';
+          document.getElementById('wrapper').style.display = 'none';
+      }
+      else {
+          document.getElementById('check').style.display = 'none';
+          document.getElementById('wrapper').style.display = 'flex';
+      }
+  }
+}
