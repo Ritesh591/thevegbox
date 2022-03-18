@@ -178,40 +178,43 @@ const increaseNumber = (incdec,itemPrice) => {
 
   // working cart
 
-if (document.readyState == 'loading'){
-  document.addEventListener("DOMContentLoader", ready)
-} else{
-  ready()
-}
+// if (document.readyState == 'loading'){
+//   document.addEventListener("DOMContentLoader", ready)
+// } else{
+//   ready()
+// }
 
-  // making functions
+//   // making functions
 
-function ready(){
-  //remove items from cart
-  var removeCartButton = document.getElementsByClassName('cart-remove')
-  console.log(removeCartButton)
-  for (var i = 0; i < removeCartButton.length; i++){
-    var button = removeCartButton[i]
-    button.addEventListener('click', removeCartItem)
-  }
-}
+// function ready(){
+//   //remove items from cart
+//   var removeCartButton = document.getElementsByClassName('cart-remove')
+//   console.log(removeCartButton)
+//   for (var i = 0; i < removeCartButton.length; i++){
+//     var button = removeCartButton[i]
+//     button.addEventListener('click', removeCartItem)
+//   }
+// }
 
-function removeCartItem(event) {
-  var buttonClicked = event.target
-  buttonClicked.parentElement.remove()
-}
+// function removeCartItem(event) {
+//   var buttonClicked = event.target
+//   buttonClicked.parentElement.remove()
+// }
+
+
+
 
 
 function switchVisible() {
   if (document.getElementById('check')) {
 
-      if (document.getElementById('check').style.display == 'none') {
-          document.getElementById('check').style.display = 'none';
-          document.getElementById('wrapper').style.display = 'none';
-      }
-      else {
-          document.getElementById('check').style.display = 'none';
-          document.getElementById('wrapper').style.display = 'flex';
-      }
+    if (document.getElementById('check').style.display == 'none') {
+        document.getElementById('check').style.display = 'block';
+        document.getElementById('wrapper').style.display = 'none';
+    }
+    else {
+        document.getElementById('check').style.display = 'none';
+        document.getElementById('wrapper').style.display = 'flex';
+    }
   }
 }

@@ -1355,6 +1355,155 @@ textarea::placeholder{
   opacity: 0.2;
 }
 
+/* --single-product-page--- */
+
+.single-container{
+  position: relative;
+  max-width: 135rem;
+  margin:10rem 10rem;
+  padding: 10rem 2rem 0 2.5rem;
+}
+
+.single-container .row{
+  display: flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.single-product{
+  margin-top: 4rem;
+}
+
+.col-2{
+  position: relative;
+  flex: 2 1 auto;
+  min-width: 30rem;
+}
+
+.col-2 img{
+  margin: 4rem 0 0 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.col-2 h1{
+  font-size: 4rem;
+  line-height: 6rem;
+  margin: 2.5rem 0;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.single-product h4{
+  margin: 2rem 0 4rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+
+
+.qnt-lbl{
+  position: absolute;
+  top: 15rem;
+  font-size: 1.3rem;
+  padding: .3rem .4rem;
+  border: 1px solid black;
+}
+
+.col-2 .pick-btn{
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+  background: var(--orange);
+  padding: .8rem 3rem;
+  margin: 3rem 0 !important;
+  border-radius: 3rem;
+  transition: background 0.5s;
+}
+
+.pick-btn:hover{
+  background: #39cf34;
+}
+
+.product-tabs{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 75rem;
+  margin: 4rem 0;
+}
+
+.product-tabs input[type="radio"]{
+  display: none;
+}
+
+.product-tabs label{
+  padding: 2rem 2.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.7rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.product-tabs label:hover{
+  color: var(--orange);
+  border-bottom: 1px solid var(--orange);
+}
+
+.product-tabs p{
+  font-size: 1.4rem;
+}
+
+
+.product-tabs .tab{
+  width: 100%;
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  order: 1;
+  display: none;
+}
+
+
+.product-tabs input[type="radio"]:checked + label + .tab{
+  display: block;
+}
+
+.product-tabs input[type="radio"]:checked + label {
+  color: var(--orange);
+  border-bottom: 3px solid var(--orange);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --------cart-page---------- */
 
 .small-container {
@@ -1500,6 +1649,7 @@ th:last-child {
 }
 
 .check-container{
+  display: block;
   max-width: 90rem;
   width: 100%;
   background: white;
