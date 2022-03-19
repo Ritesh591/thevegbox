@@ -60,7 +60,7 @@ var swiper = new Swiper(".review-slider", {
     },
 });
 
-// Login page
+//---------------------------LOGIN PAGE--------------------------------
 
   const container = document.querySelector(".container"),
       pwShowHide = document.querySelectorAll(".showHidePw"),
@@ -73,7 +73,7 @@ var swiper = new Swiper(".review-slider", {
       alertText = document.querySelector(".txt"),
       submitBtn = document.querySelector("#button");
 
-      //show/hide password and change icon
+      //-----------------show/hide password and change icon--------------------
     pwShowHide.forEach(eyeIcon =>{
       eyeIcon.addEventListener("click", ()=>{
           pwFields.forEach(pwField =>{
@@ -94,7 +94,7 @@ var swiper = new Swiper(".review-slider", {
       })
   })
 
-  //to appear signup and login form
+  //-------------------to appear signup and login form---------------------
   $(document).ready(function() {
     signUp.addEventListener("click", ( )=>{
       container.classList.add("active");
@@ -103,7 +103,7 @@ var swiper = new Swiper(".review-slider", {
         container.classList.remove("active");
     });
 
-    // to check and confirm input field's password
+    //--------------to check and confirm input field's password-------------
 
     createPw.addEventListener("input", ()=>{
       let inputValue = createPw.value.trim(); //trim function do not count more than one space
@@ -136,74 +136,35 @@ var swiper = new Swiper(".review-slider", {
     });
   });
 
-// CART
+//---------------------------CART PAGE--------------------------------
 
+      // --------quantity button--------
 
-// --quantity button----
-var productSubtotalAmt = document.getElementById('productSubtotalAmt');
-var deliveryCharge = document.getElementById('deliveryCharge');
-var totalCartAmt = document.getElementById('totalCartAmt');
+      const plus = document.querySelector(".plus"),
+      num = document.querySelector(".num"),
+      minus = document.querySelector(".minus");
 
+      let a = 1;
 
-const decreaseNumber = (incdec,itemPrice) => {
-  var itemVal = document.getElementById(incdec);
-  var itemPrice = document.getElementById(itemPrice);
+      plus.addEventListener("click", ()=>{
+        a++;
+        a = (a < 10) ? "0" + a : a;
+        num.innerText = a;
+        console.log(a);
+      });
 
-
-  if(itemVal.value <= 0){
-    itemVal.value = 0;
-  }else{
-    itemVal.value = parseInt(itemVal.value) - 1;
-    itemPrice.innerHTML = parseInt(itemPrice.innerHTML) - 100 ;
-    productSubtotalAmt.innerHTML = parseInt(productSubtotalAmt.innerHTML) - 100 ;
-    totalCartAmt.innerHTML = parseInt(productSubtotalAmt.innerHTML) + parseInt(deliveryCharge.innerHTML) ;
-  }
-}
-const increaseNumber = (incdec,itemPrice) => {
-  var itemVal = document.getElementById(incdec);
-  var itemPrice = document.getElementById(itemPrice);
-
-
-  if(itemVal.value >= 10){
-    itemVal.value = 10;
-    alert('Max 10 allowed');
-  }else{
-    itemVal.value = parseInt(itemVal.value) + 1;
-    itemPrice.innerHTML = parseInt(itemPrice.innerHTML) + 100;
-    productSubtotalAmt.innerHTML = parseInt(productSubtotalAmt.innerHTML) + 100 ;
-    totalCartAmt.innerHTML = parseInt(productSubtotalAmt.innerHTML) + parseInt(deliveryCharge.innerHTML) ;
-
-  }
-}
-
-  // working cart
-
-// if (document.readyState == 'loading'){
-//   document.addEventListener("DOMContentLoader", ready)
-// } else{
-//   ready()
-// }
-
-//   // making functions
-
-// function ready(){
-//   //remove items from cart
-//   var removeCartButton = document.getElementsByClassName('cart-remove')
-//   console.log(removeCartButton)
-//   for (var i = 0; i < removeCartButton.length; i++){
-//     var button = removeCartButton[i]
-//     button.addEventListener('click', removeCartItem)
-//   }
-// }
-
-// function removeCartItem(event) {
-//   var buttonClicked = event.target
-//   buttonClicked.parentElement.remove()
-// }
+      minus.addEventListener("click", ()=>{
+        if(a > 1){
+          a--;
+          a = (a < 10) ? "0" + a : a;
+          num.innerText = a;
+        }
+      });
 
 
 
 
+//---------------------------ORDER CONFIRMATION PAGE--------------------------------
 
 function switchVisible() {
   if (document.getElementById('check')) {

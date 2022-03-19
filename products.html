@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheVegBox</title>
+    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
@@ -60,17 +63,43 @@
     <div class="single-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="image/onion.png" alt="onion">
+                <img class="product-img" src="image/onion.png" alt="onion">
                 <div class="product-content">
                     <h2>Why <span>Shop</span> From TheVegBox ?</h2>
 
-                    
+                    <div class="feature">
+                        <div class="feature-img">
+                            <img src="image/OrganicCertifiedSymbol.webp" alt="">
+                        </div>
+                        <h3>100% Certified Organic</h3>
+                        <p>All the Products Delivered by TheVegBox Are Brought From Certified Organic Farmers.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-img">
+                            <img src="image/direct-farm.webp" alt="">
+                        </div>
+                        <h3>We promise to serve only Fresh</h3>
+                        <p>TheVegBox is here to reduce your efforts to search Only Organic Fresh Vegetables and Fruits.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-img">
+                            <img src="image/Lowestprice (1).webp" alt="">
+                        </div>
+                        <h3>At affordable price</h3>
+                        <p>TheVegBox gives you 100% Certified Organic, Tasty and Healthy Products at Affordable price.</p>
+                    </div>
+
                 </div>
             </div>
             <div class="col-2">
                 <h1 id="product-title">Organic onion</h1>
                 <h4 id="product-price">Rs. 58.00</h4>
                 <label for="product-price" class="qnt-lbl">1 KG</label><br>
+                <div class="qnt-select">
+                    <span class="minus">-</span>
+                    <span class="num">01</span>
+                    <span class="plus">+</span>
+                </div>
                 <a href="#" class="pick-btn"><span class="fas fa-shopping-cart"></span> Pick</a>
                 <div class="product-tabs">
                     <input type="radio" id="tabProduct" name="myTabs" checked="checked">

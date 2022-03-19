@@ -1360,7 +1360,7 @@ textarea::placeholder{
 .single-container{
   position: relative;
   max-width: 135rem;
-  margin:10rem 10rem;
+  margin: 10rem 10rem;
   padding: 10rem 2rem 0 2.5rem;
 }
 
@@ -1372,7 +1372,7 @@ textarea::placeholder{
 }
 
 .single-product{
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .col-2{
@@ -1381,9 +1381,10 @@ textarea::placeholder{
   min-width: 30rem;
 }
 
-.col-2 img{
+.col-2 .product-img{
+  border-radius: 1.5rem;
   margin: 4rem 0 0 1.6rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .col-2 h1{
@@ -1400,14 +1401,45 @@ textarea::placeholder{
   font-weight: bold;
 }
 
-
-
 .qnt-lbl{
   position: absolute;
   top: 15rem;
   font-size: 1.3rem;
-  padding: .3rem .4rem;
-  border: 1px solid black;
+  padding: .3rem .8rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: .7rem;
+}
+
+.qnt-select{
+  height: 4rem;
+  width: 17rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  border: 2px groove rgba(0, 0, 0, 0.1);
+}
+
+.qnt-select span{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.qnt-select span::selection {
+  color: none;
+  background: none;
+}
+
+.qnt-select span.num{
+  font-size: 1.6rem;
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  pointer-events: none;
 }
 
 .col-2 .pick-btn{
@@ -1440,6 +1472,7 @@ textarea::placeholder{
 .product-tabs label{
   padding: 2rem 2.8rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
   font-size: 1.7rem;
   font-weight: bold;
   cursor: pointer;
@@ -1452,6 +1485,7 @@ textarea::placeholder{
 
 .product-tabs p{
   font-size: 1.4rem;
+  letter-spacing: 1px;
 }
 
 
@@ -1459,6 +1493,7 @@ textarea::placeholder{
   width: 100%;
   padding: 2rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
   order: 1;
   display: none;
 }
@@ -1472,6 +1507,66 @@ textarea::placeholder{
   color: var(--orange);
   border-bottom: 3px solid var(--orange);
 }
+
+.product-content{
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.product-content h2{
+  font-size: 1.9rem;
+  margin-bottom: 3rem;
+}
+
+.product-content span{
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+.feature{
+  width: 38rem;
+  height: 10rem;
+}
+
+.feature-img{
+  float: left;
+}
+
+.feature-img img{
+  border: none;
+  margin: 0;
+  margin-right: .5rem;
+  width: 5rem;
+  /* height: 5rem; */
+}
+
+.feature h3{
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  color: var(--orange);
+}
+
+.feature p{
+  font-size: 1.3rem;
+  /* letter-spacing: 1px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

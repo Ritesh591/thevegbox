@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cart | TheVegBox</title>
+    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
@@ -14,9 +17,6 @@
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
@@ -68,7 +68,6 @@
         <table>
             <tr>
                 <th>Product</th>
-                <th>Quantity</th>
                 <th>Subtotal</th>
             </tr>
             <tr>
@@ -83,19 +82,7 @@
                         </div>
                     </div>
                 </td>
-                <td>
-                    <ul class="pagination justify-content-left set_quantity">
-                        <li class="page-item">
-                            <button class="page-link" onclick="decreaseNumber('textbox','itemVal')"><i
-                                    class="fas fa-minus"></i></button>
-                        </li>
-                        <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox" disabled></li>
-                        <li class="page-item">
-                            <button class="page-link" onclick="increaseNumber('textbox','itemVal')"><i
-                                    class="fas fa-plus"></i></button>
-                        </li>
-                    </ul>
-                </td>
+                
                 <td><span id="itemVal">0</span> &#8377;/-</td>
             </tr>
             <tr>
@@ -110,19 +97,7 @@
                         </div>
                     </div>
                 </td>
-                <td>
-                    <ul class="pagination justify-content-left set_quantity">
-                        <li class="page-item">
-                            <button class="page-link" onclick="decreaseNumber('textbox1','itemVal1')"><i
-                                    class="fas fa-minus"></i></button>
-                        </li>
-                        <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox1" disabled></li>
-                        <li class="page-item">
-                            <button class="page-link" onclick="increaseNumber('textbox1','itemVal1')"><i
-                                    class="fas fa-plus"></i></button>
-                        </li>
-                    </ul>
-                </td>
+                
                 <td><span id="itemVal1">0</span> &#8377;/-</td>
             </tr>
             <tr>
@@ -137,19 +112,7 @@
                         </div>
                     </div>
                 </td>
-                <td>
-                    <ul class="pagination justify-content-left set_quantity">
-                        <li class="page-item">
-                            <button class="page-link" onclick="decreaseNumber('textbox2','itemVal2')"><i
-                                    class="fas fa-minus"></i></button>
-                        </li>
-                        <li class="page-item"><input type="text" name="" class="page-link" value="0 " id="textbox2" disabled></li>
-                        <li class="page-item">
-                            <button class="page-link" onclick="increaseNumber('textbox2','itemVal2')"><i
-                                    class="fas fa-plus"></i></button>
-                        </li>
-                    </ul>
-                </td>
+               
                 <td><span id="itemVal2">0</span> &#8377;/-</td>
             </tr>
         </table>
