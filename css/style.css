@@ -1382,6 +1382,7 @@ textarea::placeholder{
 }
 
 .col-2 .product-img{
+  max-width: 100%;
   border-radius: 1.5rem;
   margin: 4rem 0 0 1.6rem;
   border: 2px solid rgba(0, 0, 0, 0.1);
@@ -1950,6 +1951,42 @@ form input[type="radio"]{
 
 /* media queries  */
 
+@media (max-width: 1480px){
+  .single-container{
+    max-width: 150rem;
+    margin: 10rem 4rem;
+    padding: 10rem 0 0 2.5rem;
+  }
+
+  .single-product{
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1290px){
+  .single-container{
+    max-width: 150rem;
+    margin: 10rem 0rem;
+    padding: 10rem 0 0 2.5rem;
+  }
+
+  .single-product{
+    margin-top: 0;
+  }
+
+  .product-tabs{
+    max-width: 49rem;
+  }
+
+  .col-2 .product-img{
+    width: 80%;
+  }
+
+  .product-tabs label{
+    padding: 1.5rem 0.9rem;
+  }
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -1972,7 +2009,27 @@ form input[type="radio"]{
   }
 }
 
+@media (max-width: 890px){
+  .product-tabs label {
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+  }
 
+  .product-tabs {
+    max-width: 30rem;
+  }
+
+  .col-2 h1 {
+    width: 29rem;
+    font-size: 3rem;
+  }
+
+  .col-2{
+    position: relative;
+    flex: content;
+    min-width: 30rem;
+  }
+}
 
 @media (max-width: 768px) {
   
@@ -2073,7 +2130,19 @@ form input[type="radio"]{
   }
 }
 
+@media (max-width: 715px){
+  .col-2 .product-content{
+    display: none;
+  }
 
+  .col-2 h1{
+    width: 50rem;
+  }
+
+  .col-2 .product-img{
+    width: 90%;
+  }
+}
 
 @media (max-width: 450px) {
   html {
@@ -2148,6 +2217,14 @@ form input[type="radio"]{
   .cart-page{
     margin: 17rem 2rem 12rem;
   }
+
+  .col-2 .product-img{
+    width: 100%;
+  }
+
+  .product-tabs {
+    max-width: 50rem;
+}
 
   .check-page{
     padding: 10rem 0;
