@@ -1554,26 +1554,6 @@ textarea::placeholder{
   /* letter-spacing: 1px; */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------cart-page---------- */
 
 .small-container {
@@ -1928,8 +1908,62 @@ form input[type="radio"]{
 
 
 
+/* ------404-error-page---------- */
 
 
+#error-container{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('image/p404.png'), #151729;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .5);
+}
+
+#error-container .content{
+  max-width: 60rem;
+  text-align: center;
+}
+
+#error-container .content h2{
+  font-size: 18vw;
+  color: #fff;
+  line-height: 1em;
+}
+
+#error-container .content h4{
+  position: relative;
+  font-size: 1.5em;
+  margin-bottom: 2rem;
+  color: #111;
+  background: #fff;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  display: inline-block;
+}
+
+#error-container .content p{
+  color: #fff;
+  font-size: 1.2em;
+}
+
+#error-container .content a{
+  font-size: 1.5em;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: var(--orange);
+  color: white;
+  text-decoration: none;
+  margin-top: 2.5rem;
+  border-radius: 2.5rem;
+  border-bottom: 4px solid #ff9900;
+}
 
 
 
