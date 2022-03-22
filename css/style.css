@@ -1033,6 +1033,7 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
   font-size: 2rem;
   letter-spacing: 1px;
+  margin-top: 7rem;
 }
 
 .proc .row .content .leaf {
