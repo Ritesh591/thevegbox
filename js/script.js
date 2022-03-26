@@ -1,9 +1,11 @@
+
 let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () =>{
     searchForm.classList.toggle('active');
     navbar.classList.remove('active');
 }
+
 
 let navbar = document.querySelector('.navbar');
 
@@ -146,20 +148,23 @@ var swiper = new Swiper(".review-slider", {
 
       let a = 1;
 
-      plus.addEventListener("click", ()=>{
-        a++;
-        a = (a < 10) ? "0" + a : a;
-        num.innerText = a;
-        console.log(a);
-      });
-
-      minus.addEventListener("click", ()=>{
-        if(a > 1){
-          a--;
+      $(document).ready(function(){
+        plus.addEventListener("click", ()=>{
+          a++;
           a = (a < 10) ? "0" + a : a;
           num.innerText = a;
-        }
+          console.log(a);
+        });
+
+        minus.addEventListener("click", ()=>{
+          if(a > 1){
+            a--;
+            a = (a < 10) ? "0" + a : a;
+            num.innerText = a;
+          }
+        });
       });
+      
 
 
 
@@ -179,3 +184,7 @@ function switchVisible() {
     }
   }
 }
+
+// -----------------------------ADMIN-PANEL--------------------------------
+
+

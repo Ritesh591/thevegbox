@@ -1,0 +1,19 @@
+{
+  "name": "thevegbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ritesh591/thevegbox.git"
+  },
+  "author": "ritesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ritesh591/thevegbox/issues"
+  },
+  "homepage": "https://github.com/Ritesh591/thevegbox#readme"
+}
