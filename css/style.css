@@ -47,7 +47,7 @@ body {
 }
 
 section {
-  padding: 2rem 9%;
+  padding: 4rem 9%;
 }
 
 a {
@@ -258,8 +258,9 @@ a {
 }
 
 .features .box-container .box p {
-  font-size: 1.5rem;
-  line-height: 1.8;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  line-height: 2;
   color: var(--light-color);
   padding: 1rem 0;
 }
@@ -747,6 +748,17 @@ input[type=number]::-webkit-outer-spin-button {
 .form .login-signup{
   margin-top: 30px;
   text-align: center;
+}
+
+/* ----forgot password page----- */
+
+.container .fp-form{
+  height: 47rem;
+}
+
+.account-page p{
+  font-size: 1.5rem;
+  padding: 2.5rem 0 .5rem 0;
 }
 
 
@@ -1564,6 +1576,10 @@ textarea::placeholder{
   /* letter-spacing: 1px; */
 }
 
+
+
+
+
 /* --------cart-page---------- */
 
 .small-container {
@@ -2166,9 +2182,35 @@ form input[type="radio"]{
   border-radius: 50%;
 }
 
+.dashboard .dash-content{
+  padding-top: 5rem;
+}
 
+.dash-title{
+  display: flex;
+  align-items: center;
+  margin: 6rem 0 3rem 0;
+}
 
+.dash-title i{
+  position: relative;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: var(--primary-color);
+  border-radius: .6rem;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+}
 
+.dash-title .dash-text{
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-left: 1rem;
+}
 
 
 
