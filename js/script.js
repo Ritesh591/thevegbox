@@ -92,7 +92,7 @@ var swiper = new Swiper(".review-slider", {
                       icon.classList.replace("uil-eye", "uil-eye-slash");
                   })
               }
-          }) 
+          })
       })
   })
 
@@ -164,27 +164,12 @@ var swiper = new Swiper(".review-slider", {
           }
         });
       });
-      
+
 
 
 
 
 //---------------------------ORDER CONFIRMATION PAGE--------------------------------
 
-function switchVisible() {
-  if (document.getElementById('check')) {
-
-    if (document.getElementById('check').style.display == 'none') {
-        document.getElementById('check').style.display = 'block';
-        document.getElementById('wrapper').style.display = 'none';
-    }
-    else {
-        document.getElementById('check').style.display = 'none';
-        document.getElementById('wrapper').style.display = 'flex';
-    }
-  }
-}
-
+//
 // -----------------------------ADMIN-PANEL--------------------------------
-
-

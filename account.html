@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | TheVegBox</title>
-    
+
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- iconscout link for icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -27,8 +30,6 @@
 </head>
 
 <body>
-
-    <!-- header section starts  -->
 
     <header class="header">
 
@@ -47,7 +48,7 @@
             <div class="fas fa-search" id="search-btn"></div>
             <a href="cart.html">
                 <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            </a> 
+            </a>
             <a href="account.html">
                 <div class="fas fa-user" id="login-btn"></div>
             </a>
@@ -60,16 +61,12 @@
 
     </header>
 
-    <!-- header section ends -->
-
-    <!-- ---header-section starts---- -->
-
     <div class="account-page">
         <div class="container">
             <div class="forms">
                 <div class="form login">
                     <span class="title-LR">Login</span>
-    
+
                     <form action="#">
                         <div class="input-field">
                             <input type="email" placeholder="Enter your email" required>
@@ -80,21 +77,21 @@
                             <i class="uil uil-lock icon"></i>
                             <i class="uil uil-eye-slash showHidePw"></i>
                         </div>
-    
+
                         <div class="checkbox-text">
                             <div class="checkbox-content">
                                 <input type="checkbox" id="logCheck">
                                 <label for="logCheck" class="cb-text">Remember me</label>
                             </div>
-                            
+
                             <a href="forgotpassword.html" class="link-text">Forgot password?</a>
                         </div>
-    
+
                         <div class="input-field button">
                             <input type="submit" value="Login Now">
                         </div>
                     </form>
-    
+
                     <div class="login-signup">
                         <span class="cb-text">Not a member?
                             <a href="#" class="link-text signup-link">Signup now</a>
@@ -106,7 +103,6 @@
                 <!-- Registration Form -->
                 <div class="form signup">
                     <span class="title-LR">Registration</span>
-
                     <form action="#">
                         <div class="user-detail">
                             <div class="input-field">
@@ -126,15 +122,17 @@
                                 <i class="uil uil-location-point"></i>
                             </div>
                             <div class="input-field">
-                                <input type="number" placeholder="Enter pincode"  required >
+                                <input type="number" placeholder="Enter pincode" required>
                                 <i class="uil uil-map-pin-alt"></i>
                             </div>
                             <div class="input-field">
-                                <input id="createPw" type="password" class="password" placeholder="Create a password" required>
+                                <input id="createPw" type="password" class="password" placeholder="Create a password"
+                                    required>
                                 <i class="uil uil-lock icon"></i>
                             </div>
                             <div class="input-field">
-                                <input id="confirmPw" type="password" class="password" placeholder="Confirm a password" required disabled>
+                                <input id="confirmPw" type="password" class="password" placeholder="Confirm a password"
+                                    required disabled>
                                 <i class="uil uil-lock icon"></i>
                                 <i class="uil uil-eye-slash showHidePw"></i>
                             </div>
@@ -142,20 +140,25 @@
                                 <i class="fas fa-exclamation-circle errorIcon"></i>
                                 <span class="txt">Enter atleast 8 characters</span>
                             </div>
-                        </div>
-
-                        <div class="checkbox-text">
-                            <div class="checkbox-content">
-                                <input type="checkbox" id="sigCheck">
-                                <label for="sigCheck" class="cb-text">Remember me</label>
+                            <div class="input-field">
+                                <label for="role">Choose a role:</label>
+                                <select name="role" id="role" onchange="display()">
+                                    <option value="choose">choose</option>
+                                    <option id="delivery-person" value="delivery-person">delivery person</option>
+                                </select>
+                            </div>
+                            <div id="file-upload" style="display: none">
+                                <label class="licence-lbl" for="licence-file">Upload driving licence :</label>
+                                <label class="custom-file-upload">
+                                    <input class="licence-file" type="file" />
+                                    <i class="fa fa-cloud-upload"></i> select file
+                                </label>
                             </div>
                         </div>
-
                         <div class="input-field button">
                             <input id="button" type="submit" value="Register Now">
                         </div>
                     </form>
-
                     <div class="login-signup">
                         <span class="cb-text">Already a member?
                             <a href="#" class="link-text login-link">Login now</a>
@@ -165,11 +168,6 @@
             </div>
         </div>
     </div>
-
-
-    <!-- ---header-section ends---- -->
-
-    <!-- footer section starts  -->
 
     <section class="footer">
 
@@ -196,39 +194,31 @@
 
             <div class="box">
                 <h3>quick links</h3>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+                <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="vegetables.html" class="links"> <i class="fas fa-arrow-right"></i> vegetables </a>
+                <a href="fruits.html" class="links"> <i class="fas fa-arrow-right"></i> fruits </a>
+                <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i> about us </a>
+                <a href="contact.html" class="links"> <i class="fas fa-arrow-right"></i> contact us </a>
             </div>
-
-            <div class="box">
-                <h3>newsletter</h3>
-                <p>subscribe for latest updates</p>
-                <input type="email" placeholder="your email" class="email">
-                <input type="submit" value="subscribe" class="btn">
-                <img src="image/payment.png" class="payment-img" alt="">
-            </div>
-
         </div>
 
         <div class="credit"> &copy; copyright <span> TheVegBox </span> | all rights reserved </div>
 
     </section>
 
-    <!-- footer section ends -->
-
-
-
-
-
-
-
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!-- custom js file link  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
     <script src="js/script.js"></script>
+    <script>
+        function display() {
+            var role = document.getElementById("role");
+            var fileUpload = document.getElementById("file-upload");
+
+            fileUpload.style.display = role.value == "delivery-person" ? "block" : "none";
+        }
+    </script>
 
 </body>
 

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Product | TheVegBox</title>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- iconscout link for icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/184c7e2d8e.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" href="icon/android-chrome-192x192.png" sizes="16x16">
+
+</head>
+
+<body>
+
+    <nav class="admin-nav">
+        <div class="logo-name">
+            <div class="logo-img">
+                <img src="icon/favicon.ico" alt="logo">
+            </div>
+
+            <span class="logo_name">TheVegBox</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="admin.html">
+                        <i class="uil uil-estate"></i>
+                        <span class="link-name">Dashboard</span>
+                    </a></li>
+                <li><a href="users.html">
+                        <i class="uil uil-users-alt"></i>
+                        <span class="link-name">Users</span>
+                    </a></li>
+                <li><a href="product.html">
+                        <i class="uil uil-box"></i>
+                        <span class="link-name">Products</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-list-ul"></i>
+                        <span class="link-name">Category</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-truck"></i>
+                        <span class="link-name">Delivery</span>
+                    </a></li>
+            </ul>
+
+            <ul class="logout-mod">
+                <li><a href="account.html">
+                        <i class="uil uil-signout"></i>
+                        <span class="link-name">Logout</span>
+                    </a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search Here...">
+            </div>
+
+            <img class="profilePic" src="image/profile.jpg" alt="profilePic">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview product-overview">
+                <div class="dash-title">
+                    <i class="uil uil-plus"></i>
+                    <span class="dash-text">Add product</span>
+                </div>
+                <div class="add-product-container">
+                    <div class="content">
+                        <form action="#">
+                            <div class="user-details">
+                                <div class="input-box">
+                                    <span class="details">Product name</span>
+                                    <input type="text" placeholder="enter Product name" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Product price</span>
+                                    <input type="number" placeholder="enter Product price" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Product description</span>
+                                    <input type="text" placeholder="enter Product description" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">category</span>
+                                    <label class="select" for="slct">
+                                        <select id="slct" required="required">
+                                            <option value="" disabled="disabled" selected="selected">------Select
+                                                option--------</option>
+                                            <option value="#">Vegetables</option>
+                                            <option value="#">Fruits</option>
+                                        </select>
+                                        <svg>
+                                            <use xlink:href="#select-arrow-down"></use>
+                                        </svg>
+                                    </label>
+                                    <svg class="sprites">
+                                        <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                                            <polyline points="1 1 5 5 9 1"></polyline>
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Product Quantity</span>
+                                    <input type="number" placeholder="enter Product Quantity" required>
+                                </div>
+                                <div class="input-box upload-file">
+                                    <label class="licence-lbl" for="licence-file">Upload Product image :</label>
+                                    <label class="custom-file-upload">
+                                        <input class="licence-file" type="file" style="display: none;" />
+                                        <i class="fa fa-cloud-upload"></i> select file
+                                    </label>
+                                </div>
+                            </div>
+                            <a href="#" class="pick-btn add-product"><i class="uil uil-plus"></i> Add Product</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- custom js file link  -->
+    <!-- <script src="js/script.js"></script> -->
+    <script>
+        const body = document.querySelector("body"),
+            sidebar = body.querySelector(".admin-nav"),
+            sidebarToggle = body.querySelector(".sidebar-toggle");
+
+        sidebarToggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+    </script>
+</body>
+
+</html>
