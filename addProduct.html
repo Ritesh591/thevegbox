@@ -45,15 +45,19 @@
                         <i class="uil uil-users-alt"></i>
                         <span class="link-name">Users</span>
                     </a></li>
-                <li><a href="product.html">
+                <li><a href="allProducts.html">
                         <i class="uil uil-box"></i>
-                        <span class="link-name">Products</span>
+                        <span class="link-name">All Products</span>
                     </a></li>
-                <li><a href="#">
-                        <i class="uil uil-list-ul"></i>
-                        <span class="link-name">Category</span>
+                <li><a href="addProduct.html">
+                        <i class="uil uil-plus"></i>
+                        <span class="link-name">Add Products</span>
                     </a></li>
-                <li><a href="#">
+                <li><a href="order.html">
+                        <i class="uil uil-shopping-bag"></i>
+                        <span class="link-name">Order</span>
+                    </a></li>
+                <li><a href="delivery.html">
                         <i class="uil uil-truck"></i>
                         <span class="link-name">Delivery</span>
                     </a></li>
@@ -92,6 +96,10 @@
                         <form action="#">
                             <div class="user-details">
                                 <div class="input-box">
+                                    <span class="details">Product ID</span>
+                                    <input type="text" placeholder="enter Product ID" >
+                                </div>
+                                <div class="input-box">
                                     <span class="details">Product name</span>
                                     <input type="text" placeholder="enter Product name" required>
                                 </div>
@@ -127,14 +135,18 @@
                                     <input type="number" placeholder="enter Product Quantity" required>
                                 </div>
                                 <div class="input-box upload-file">
-                                    <label class="licence-lbl" for="licence-file">Upload Product image :</label>
-                                    <label class="custom-file-upload">
-                                        <input class="licence-file" type="file" style="display: none;" />
-                                        <i class="fa fa-cloud-upload"></i> select file
-                                    </label>
+                                    <label class="details" for="licence-file">Upload Product image :</label>
+                                    <div class="file-upload-wrapper" data-text="Select Product Image!">
+                                        <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                                    </div>
                                 </div>
                             </div>
-                            <a href="#" class="pick-btn add-product"><i class="uil uil-plus"></i> Add Product</a>
+                            <div class="add-product-btn">
+                                <a href="#" class="pick-btn add-product"><i class="uil uil-plus"></i> Add
+                                    Product</a>&nbsp;&nbsp; &nbsp;
+                                <a href="#" class="pick-btn add-product"><i class="uil uil-sync"></i> Update Product</a>
+
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -151,6 +163,10 @@
 
         sidebarToggle.addEventListener("click", () => {
             sidebar.classList.toggle("close");
+        });
+
+        $("form").on("change", ".file-upload-field", function () {
+            $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
         });
     </script>
 </body>

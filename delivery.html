@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel | TheVegBox</title>
+    <title>Delivery | TheVegBox</title>
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -53,7 +53,7 @@
                         <span class="link-name">Add Products</span>
                     </a></li>
                 <li><a href="order.html">
-                    <i class="uil uil-shopping-bag"></i>
+                        <i class="uil uil-shopping-bag"></i>
                         <span class="link-name">Order</span>
                     </a></li>
                 <li><a href="delivery.html">
@@ -86,23 +86,26 @@
         <div class="dash-content">
             <div class="overview">
                 <div class="dash-title">
-                    <i class="uil uil-tachometer-fast-alt"></i>
-                    <span class="dash-text">Dashboard</span>
+                    <i class="uil uil-truck"></i>
+                    <span class="dash-text">Delivery</span>
                 </div>
 
-                <div class="boxes">
+                <div class="user-details">
+                    <form action="#" class="delivery-table">
+                        <div class="input-box">
+                            <span class="details">order ID</span>
+                            <input type="text" placeholder="enter order ID" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">user ID</span>
+                            <input type="text" placeholder="enter user ID" required>
+                        </div>
 
+                        <button class="pick-btn add-product">Allocate Order</button>
+
+                    </form>
                 </div>
-
             </div>
-
-            <div class="activity">
-                <div class="dash-title">
-                    <i class="uil uil-clock-three"></i>
-                    <span class="dash-text">Recent activity</span>
-                </div>
-            </div>
-
         </div>
     </section>
 
